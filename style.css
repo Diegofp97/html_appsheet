@@ -39,8 +39,8 @@ body {
 
 /* Logo Style */
 .logo {
-    height: 100%; /* Mantiene el logo alineado al alto del rectángulo */
-    aspect-ratio: 1; /* Mantiene la relación de aspecto cuadrada */
+    height: 100px; /* Fija la altura del logo */
+    width: auto; /* Asegura que la imagen mantenga su relación de aspecto */
     margin-left: 20px; /* Espacio entre el rectángulo y el logo */
     object-fit: contain; /* Asegura que la imagen se ajuste dentro del espacio */
 }
