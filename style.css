@@ -6,11 +6,28 @@ body {
     line-height: 1.5;
 }
 
-/* Title Styles */
-h1 {
+/* Title Box Container */
+.title-box {
+    background-color: orange;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Variable Text Style */
+.variable-text {
     font-size: 22px;
-    text-align: center;
-    margin-bottom: 30px;
+    color: white;
+    margin: 0;
+    text-align: left;
+}
+
+/* Plain Text Style */
+.plain-text {
+    font-size: 18px;
+    color: lightblue;
+    margin: 0;
+    text-align: left;
 }
 
 /* Image Styles */
@@ -26,11 +43,4 @@ img {
 /* Page Breaks */
 div[style*="page-break-before"] {
     margin-top: 50px;
-}
-
-/* Adjustments for Clean Presentation */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px;
 }
