@@ -6,12 +6,15 @@ body {
     line-height: 1.5;
 }
 
-/* Title Box Container */
+/* Title Box Container con espacio para el logo */
 .title-box {
-    background-color: #FF9E1B; /* Naranja del rectángulo */
+    background-color: #F49C27; /* Naranja del rectángulo */
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
+    display: flex;
+    align-items: center; /* Alinea el contenido verticalmente */
+    justify-content: space-between; /* Deja espacio para el logo a la derecha */
 }
 
 /* Variable Text Style */
@@ -25,9 +28,16 @@ body {
 /* Plain Text Style */
 .plain-text {
     font-size: 18px;
-    color: #407EC8; /* Azul para "Elección de Premio" */
+    color: #68C1F1; /* Celeste para "Elección de Premio" */
     margin: 0;
     text-align: left;
+}
+
+/* Logo Style */
+.logo {
+    height: 100%; /* Mantiene el logo cuadrado en relación con el alto del rectángulo */
+    aspect-ratio: 1; /* Mantiene la relación de aspecto cuadrada */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del espacio */
 }
 
 /* Image Styles */
