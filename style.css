@@ -14,7 +14,7 @@ body {
 
 /* Title Box */
 .title-box {
-    background-color: #F49C27; /* Naranja del rectángulo */
+    background-color: #F59B25; /* Naranja del rectángulo */
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -32,7 +32,7 @@ body {
 /* Plain Text Style */
 .plain-text {
     font-size: 18px;
-    color: #68C1F1; /* Celeste para "Elección de Premio" */
+    color: #407CBF; /* Azul para "Elección de Premio" */
     margin: 0;
     text-align: left;
 }
