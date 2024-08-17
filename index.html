@@ -2,23 +2,35 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento PDF</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="title"><<[nombre_referidor]>> Elección de Premio</h1>
-        <img src="<<[link_eleccion_tipo_premio_virtual]>>&w=1800" alt="Premio elegido" class="image-high-quality">
-        
-        <h2>Documento de Identidad</h2>
-        <img src="<<[link_carnet_identidad_referidor_virtual]>>&w=1800" alt="Documento de identidad" class="image-high-quality">
+    <!-- Sección 1: Elección de Premio -->
+    <h1>&lt;&lt;[nombre_referidor]&gt;&gt; Elección de Premio</h1>
+    <img src="&lt;&lt;[link_multiapp_eleccion_tipo_premio]&gt;&gt;" alt="Premio elegido" style="width: 100%;">
 
-        <h2>Datos Bancarios</h2>
-        <img src="<<[link_datos_abono_premio_virtual]>>&w=1800" alt="Datos bancarios" class="image-high-quality">
+    <!-- Salto de página -->
+    <div style="page-break-before: always;"></div>
 
-        <h2>Recepción de Premio</h2>
-        <img src="<<[link_recepcion_premio_virtual]>>&w=1800" alt="Recepción de premio" class="image-high-quality">
-    </div>
+    <!-- Sección 2: Documento de Identidad -->
+    <h1>&lt;&lt;[nombre_referidor]&gt;&gt; Documento de Identidad</h1>
+    <img src="&lt;&lt;[link_multiapp_carnet_identidad_referidor]&gt;&gt;" alt="Documento de identidad" style="width: 100%;">
+
+    <!-- Salto de página -->
+    <div style="page-break-before: always;"></div>
+
+    <!-- Sección 3: Datos Bancarios -->
+    <h1>&lt;&lt;[nombre_referidor]&gt;&gt; Datos Bancarios</h1>
+    <img src="&lt;&lt;[link_multiapp_datos_abono_premio]&gt;&gt;" alt="Datos bancarios" style="width: 100%;">
+
+    <!-- Salto de página -->
+    <div style="page-break-before: always;"></div>
+
+    <!-- Sección 4: Recepción de Premio -->
+    <h1>&lt;&lt;[nombre_referidor]&gt;&gt; Recepción de Premio</h1>
+    <img src="&lt;&lt;[link_multiapp_recepcion_premio]&gt;&gt;" alt="Recepción de premio" style="width: 100%;">
 </body>
 </html>
+
+
+
