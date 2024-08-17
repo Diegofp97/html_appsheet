@@ -6,15 +6,19 @@ body {
     line-height: 1.5;
 }
 
-/* Title Box Container con espacio para el logo */
+/* Title Box Container */
+.title-box-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Title Box */
 .title-box {
     background-color: #F49C27; /* Naranja del rectángulo */
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
-    display: flex;
-    align-items: center; /* Alinea el contenido verticalmente */
-    justify-content: space-between; /* Deja espacio para el logo a la derecha */
+    flex-grow: 1; /* Ocupa todo el espacio disponible */
 }
 
 /* Variable Text Style */
@@ -35,8 +39,9 @@ body {
 
 /* Logo Style */
 .logo {
-    height: 100%; /* Mantiene el logo cuadrado en relación con el alto del rectángulo */
+    height: 100%; /* Mantiene el logo alineado al alto del rectángulo */
     aspect-ratio: 1; /* Mantiene la relación de aspecto cuadrada */
+    margin-left: 20px; /* Espacio entre el rectángulo y el logo */
     object-fit: contain; /* Asegura que la imagen se ajuste dentro del espacio */
 }
 
