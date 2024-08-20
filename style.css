@@ -10,23 +10,22 @@ body {
 .title-box-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Asegura la separación entre el título y el logo */
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 /* Title Box */
 .title-box {
     background-color: #F59B25; /* Naranja del rectángulo */
     padding: 10px;
-    margin-bottom: 20px;
     border-radius: 5px;
-    flex-grow: 1; /* Ocupa todo el espacio disponible */
-    max-width: 75%; /* Evita que el título se reduzca demasiado */
+    flex-grow: 1;
 }
 
 /* Variable Text Style */
 .variable-text {
     font-size: 22px;
-    color: #FFFFFF; /* Color blanco de los encabezados */
+    color: #FFFFFF;
     margin: 0;
     text-align: left;
 }
@@ -34,26 +33,30 @@ body {
 /* Plain Text Style */
 .plain-text {
     font-size: 18px;
-    color: #407CBF; /* Azul para "Elección de Premio" */
+    color: #407CBF;
     margin: 0;
     text-align: left;
 }
 
 /* Logo Style */
 .logo {
-    height: 100px; /* Fija la altura del logo */
-    width: auto; /* Asegura que la imagen mantenga su relación de aspecto */
-    margin-left: 20px; /* Espacio entre el rectángulo y el logo */
-    object-fit: contain; /* Asegura que la imagen se ajuste dentro del espacio */
+    height: 100px;
+    width: auto;
+    margin-left: 20px;
+    object-fit: contain;
 }
 
 /* Image Styles */
-img {
-    width: 100%;
-    max-width: 1000px;
-    max-height: 500px; /* Limita la altura máxima para evitar que ocupe demasiado espacio */
-    height: auto;
+.image-container {
+    text-align: center;
     margin-bottom: 40px;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain; /* Mantiene la relación de aspecto */
     border: 1px solid #ccc;
     padding: 5px;
 }
@@ -61,16 +64,11 @@ img {
 /* Ensure section stays on a single page */
 .section {
     page-break-inside: avoid;
-    margin-bottom: 20px; /* Reduce el margen inferior para evitar hojas en blanco */
-    display: block; /* Se asegura que el contenedor ocupe todo el ancho */
+    margin-bottom: 30px;
+    display: block;
 }
 
 /* Page Breaks */
 div[style*="page-break-before"] {
-    margin-top: 0; /* Evita márgenes grandes al iniciar una nueva página */
-}
-
-/* Avoid unnecessary white space at the end of pages */
-body > div:last-child {
-    margin-bottom: 0;
+    margin-top: 20px;
 }
