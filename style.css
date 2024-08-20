@@ -48,7 +48,8 @@ body {
 /* Image Styles */
 img {
     width: 100%;
-    max-width: 1000px; /* Ajusta el tamaño máximo de la imagen */
+    max-width: 1000px;
+    max-height: 500px; /* Limita la altura máxima para evitar que ocupe demasiado espacio */
     height: auto;
     margin-bottom: 40px;
     border: 1px solid #ccc;
@@ -60,7 +61,8 @@ img {
     page-break-inside: avoid;
     margin-bottom: 50px;
     display: inline-block;
-    max-height: 100vh; /* Limita el alto máximo de la sección a una página completa */
+    max-height: 90vh; /* Asegura que la sección completa no exceda una página */
+    overflow: hidden; /* Evita que el contenido se desborde */
 }
 
 /* Page Breaks */
