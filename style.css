@@ -10,6 +10,7 @@ body {
 .title-box-container {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Asegura la separación entre el título y el logo */
 }
 
 /* Title Box */
@@ -19,6 +20,7 @@ body {
     margin-bottom: 20px;
     border-radius: 5px;
     flex-grow: 1; /* Ocupa todo el espacio disponible */
+    max-width: 75%; /* Evita que el título se reduzca demasiado */
 }
 
 /* Variable Text Style */
@@ -59,13 +61,16 @@ img {
 /* Ensure section stays on a single page */
 .section {
     page-break-inside: avoid;
-    margin-bottom: 50px;
-    display: inline-block;
-    max-height: 90vh; /* Asegura que la sección completa no exceda una página */
-    overflow: hidden; /* Evita que el contenido se desborde */
+    margin-bottom: 20px; /* Reduce el margen inferior para evitar hojas en blanco */
+    display: block; /* Se asegura que el contenedor ocupe todo el ancho */
 }
 
 /* Page Breaks */
 div[style*="page-break-before"] {
-    margin-top: 50px;
+    margin-top: 0; /* Evita márgenes grandes al iniciar una nueva página */
+}
+
+/* Avoid unnecessary white space at the end of pages */
+body > div:last-child {
+    margin-bottom: 0;
 }
