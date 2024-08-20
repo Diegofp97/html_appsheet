@@ -55,6 +55,12 @@ img {
     padding: 5px;
 }
 
+/* Ensure section stays on a single page */
+.section {
+    page-break-inside: avoid;
+    margin-bottom: 50px;
+}
+
 /* Page Breaks */
 div[style*="page-break-before"] {
     margin-top: 50px;
